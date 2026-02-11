@@ -7,7 +7,7 @@
 At a high level:
 
 **Frontend (React)** → **API Gateway** → **Composite (Orchestrator) Service** → **Atomic Services (Users / Events / Feed)** → **MySQL Databases**  
-…and Pub/Sub + email notifications for key events.  [oai_citation:0‡GitHub](https://github.com/TheFriendRequest/API-Gateway-Service)
+…and Pub/Sub + email notifications for key events.  [API Gateway](https://github.com/TheFriendRequest/API-Gateway-Service)
 
 ---
 
@@ -15,15 +15,15 @@ At a high level:
 
 | Repo | Purpose |
 |------|---------|
-| `frontend-service` | React + TypeScript SPA (Firebase Auth, talks to API Gateway)  [oai_citation:1‡GitHub](https://github.com/TheFriendRequest/frontend-service) |
-| `API-Gateway-Service` | Single entrypoint: Firebase token verification + request routing to Composite service  [oai_citation:2‡GitHub](https://github.com/TheFriendRequest/API-Gateway-Service) |
-| `Main-Backend-Service` | “Composite Service” orchestrator: aggregates endpoints, manages GraphQL, Pub/Sub subscribers, cross-service workflows  [oai_citation:3‡GitHub](https://github.com/TheFriendRequest/Main-Backend-Service) |
-| `Users-Service` | User profiles, interests, search, friend requests; backed by MySQL  [oai_citation:4‡GitHub](https://github.com/TheFriendRequest/Users-Service) |
-| `Event-Service` | Event CRUD + interest-based discovery; publishes `event-created` messages  [oai_citation:5‡GitHub](https://github.com/TheFriendRequest/Event-Service) |
-| `Feed-Service` | Posts + feed generation + likes; backed by MySQL  [oai_citation:6‡GitHub](https://github.com/TheFriendRequest/Feed-Service) |
-| `DB-Service` | MySQL schema + init scripts for Users / Events / Feed databases  [oai_citation:7‡GitHub](https://github.com/TheFriendRequest/DB-Service) |
-| `Chatting-Service` | Chat service (WIP / minimal docs currently)  [oai_citation:8‡GitHub](https://github.com/TheFriendRequest/Chatting-Service) |
-| `AI-Recommendations-Service` | AI recommendations service (WIP / minimal docs currently)  [oai_citation:9‡GitHub](https://github.com/TheFriendRequest/AI-Recommendations-Service) |
+| `frontend-service` | React + TypeScript SPA (Firebase Auth, talks to API Gateway)  [Frontend Service](https://github.com/TheFriendRequest/frontend-service) |
+| `API-Gateway-Service` | Single entrypoint: Firebase token verification + request routing to Composite service  [API-Gateway-Service](https://github.com/TheFriendRequest/API-Gateway-Service) |
+| `Main-Backend-Service` | “Composite Service” orchestrator: aggregates endpoints, manages GraphQL, Pub/Sub subscribers, cross-service workflows  [Main-Backend-Service](https://github.com/TheFriendRequest/Main-Backend-Service) |
+| `Users-Service` | User profiles, interests, search, friend requests; backed by MySQL  [Users-Service](https://github.com/TheFriendRequest/Users-Service) |
+| `Event-Service` | Event CRUD + interest-based discovery; publishes `event-created` messages  [Event-Service](https://github.com/TheFriendRequest/Event-Service) |
+| `Feed-Service` | Posts + feed generation + likes; backed by MySQL  [Feed-Service](https://github.com/TheFriendRequest/Feed-Service) |
+| `DB-Service` | MySQL schema + init scripts for Users / Events / Feed databases  [DB-Service](https://github.com/TheFriendRequest/DB-Service) |
+| `Chatting-Service` | Chat service (WIP / minimal docs currently)  [Chatting-Service](https://github.com/TheFriendRequest/Chatting-Service) |
+| `AI-Recommendations-Service` | AI recommendations service (WIP / minimal docs currently)  [AI-Recommendations-Service](https://github.com/TheFriendRequest/AI-Recommendations-Service) |
 | `.github` | Org-level GitHub configuration |
 
 ---
